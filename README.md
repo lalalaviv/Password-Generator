@@ -1,8 +1,6 @@
 # 03 JavaScript: Password Generator
 
-This is a webpage with a password generator which allows the user to choose a password with a minimum of 8 characters and a maximum of 128 characters. It can also include upper, lower case, numbers and special characters. 
-
-The password can include special characters. If you’re unfamiliar with these, see this [list of password special characters](https://www.owasp.org/index.php/Password_special_characters) from the OWASP Foundation.
+This is a webpage with a password generator which allows the user to choose a password with a minimum of 8 characters and a maximum of 128 characters. It can also include upper, lower case, numbers and special characters depending on the users preference. 
 
 ## User Story
 
