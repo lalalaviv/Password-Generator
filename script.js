@@ -26,21 +26,22 @@ var criteria;
 function generatePassword(){ 
 
     // Asks user to input password length
-      var pwlength = Number(prompt ("How many characters would you like the password to contain? 8 - 128"));
+      var pwlength = Number(prompt ("How many characters would you like the password to contain? Please enter a number between 8 - 128."));
       // if user clicked cancel, no password will be generated
       if (!pwlength){
         return;
       }
      // loop for when users input is outside of parameters
       else if (pwlength < 8 || pwlength > 128){
-      prompt("Password must be between 8 - 128 characters. Please try again.")
-      }
+      alert("Password must be between 8 - 128 characters. Please enter again.");
+      return generatePassword(); 
+    }
       // User to set criteia for password generation
       else{
-        var confirmUpperCase = window.confirm("Would you like to include upper case characters in the password?")
-        var confirmLowerCase = window.confirm("Would you like to include lower case characters in the password?")
-        var confirmNumeric = window.confirm("Would you like to include numbers in the password?")
-        var confirmSpecial = window.confirm("Would you like to include special characters in the password?")
+        var confirmUpperCase = window.confirm("Would you like to include upper case characters in the password? Click OK for YES, Cancel for NO")
+        var confirmLowerCase = window.confirm("Would you like to include lower case characters in the password? Click OK for YES, Cancel for NO")
+        var confirmNumeric = window.confirm("Would you like to include numbers in the password? Click OK for YES, Cancel for NO")
+        var confirmSpecial = window.confirm("Would you like to include special characters in the password? Click OK for YES, Cancel for NO")
       };
 
 // If none of the criteria is selected
