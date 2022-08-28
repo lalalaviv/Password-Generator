@@ -2,7 +2,7 @@
 var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
+generateBtn.addEventListener('click', writePassword);
 
 
 // Write password to the #password input
@@ -12,14 +12,15 @@ function writePassword() {
 
   passwordText.value = password;
 }
-  
+
+
 //  Defining password characters
-  var numberChars = "0123456789";
-  var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-  var lowerChars = "abcdefghijklmnopqrstuvwxrz";
-  var specialChars = "!@#$%^&*()_+~/`<>,.?-=";
-  var criteria; 
-          
+var numberChars = "0123456789";
+var upperChars = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerChars = "abcdefghijklmnopqrstuvwxrz";
+var specialChars = "!@#$%^&*()_+~/`<>,.?-=";
+var criteria; 
+
 
 // Generating password with function
 function generatePassword(){ 
@@ -109,8 +110,7 @@ console.log(pwd)
 return pwd; 
 }
 
-// inputs generated password into textbox 
-document.getElementById("password").value = generatePassword();
+
 
 
 
